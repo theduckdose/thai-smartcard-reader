@@ -533,7 +533,7 @@ var ThaiSmartcardReader = function (_Component) {
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ThaiSmartcardReader.__proto__ || Object.getPrototypeOf(ThaiSmartcardReader)).call.apply(_ref, [this].concat(args))), _this), _this.pluginLoaded = function () {
       console.log('loading smartcard plugin');
-      var webcard = _this.refs.webcard;
+      var webcard = _this.webcard;
       _this.addEvent(webcard, 'cardpresent', _this.cardPresent);
       _this.addEvent(webcard, 'cardremoved', _this.cardRemoved);
     }, _this.cardPresent = function (reader) {
@@ -648,12 +648,16 @@ var ThaiSmartcardReader = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'div',
         null,
         _react2.default.createElement(
           'object',
-          { ref: 'webcard', type: 'application/x-webcard', width: '0', height: '0', style: { visibility: 'hidden', position: 'fixed', left: 0, top: 0 } },
+          { ref: function ref(n) {
+              _this2.webcard = n;
+            }, type: 'application/x-webcard', width: '0', height: '0', style: { visibility: 'hidden', position: 'fixed', left: 0, top: 0 } },
           _react2.default.createElement('param', { name: 'onload', value: 'pluginLoaded' })
         )
       );

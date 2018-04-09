@@ -15,7 +15,7 @@ class ThaiSmartcardReader extends Component {
   }
   pluginLoaded = () => {
     console.log('loading smartcard plugin')
-    const webcard = this.refs.webcard
+    const webcard = this.webcard
     this.addEvent(webcard, 'cardpresent', this.cardPresent)
     this.addEvent(webcard, 'cardremoved', this.cardRemoved)
   }
@@ -133,7 +133,7 @@ class ThaiSmartcardReader extends Component {
   render() {
     return (
       <div>
-        <object ref="webcard" type="application/x-webcard" width="0" height="0" style={{ visibility: 'hidden', position: 'fixed', left: 0, top: 0 }}>
+        <object ref={n => {this.webcard = n}} type="application/x-webcard" width="0" height="0" style={{ visibility: 'hidden', position: 'fixed', left: 0, top: 0 }}>
           <param name="onload" value="pluginLoaded" />
         </object>
       </div>
