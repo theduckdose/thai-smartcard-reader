@@ -1,0 +1,19 @@
+{
+  "name": "thai-smartcard-reader",
+  "version": "1.0.0",
+  "description": "For read thai smartcard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aodstudio/thai-smartcard-reader.git"
+  },
+  "author": "Suvichan Prasongphonchai <acspdoctoraod@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aodstudio/thai-smartcard-reader/issues"
+  },
+  "homepage": "https://github.com/aodstudio/thai-smartcard-reader#readme"
+}
