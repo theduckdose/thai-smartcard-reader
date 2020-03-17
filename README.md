@@ -50,5 +50,3 @@ import ThaiSmartcardReader from 'thai-smartcard-reader'
   "expire": "25651231"
 }
 ```
-
-สุดท้าย...ผมตามหาคนช่วยแก้ README อยู่สนใจก็ pull request มาแล้วส่ง email มาให้ผมก็ได้ ผมไม่ค่อยเก่งภาษา
