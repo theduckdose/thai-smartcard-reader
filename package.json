@@ -9,7 +9,7 @@
   "dependencies": {
     "prop-types": "^15.6.1",
     "react": "^15.5.4",
-    "webpack": "^2.6.1"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
